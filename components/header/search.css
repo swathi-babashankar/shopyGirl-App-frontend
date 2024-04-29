@@ -1,0 +1,18 @@
+.search{
+    padding-right: 90px;
+    padding-left: 50px;
+    padding-top: 35px;
+    margin-top: 10px;
+    color: #d2cccc;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-left: 120px;
+    font-size: 18px;
+}
+
+.search:hover{
+    background-color: #d2cccc;
+    color: #242424c3;
+    border: 0px;
+    border-color:  #6a6868;
+}

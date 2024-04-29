@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: #d2cccc;
+    font-size: 18px;
+}
+
+.navbar{
+    margin-top: -14px;
+    width: 100vw;
+    height: 15vh;
+    background-color: #242424c3;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 80px;
+}
+
+.logo{
+    text-shadow: 2px 1px 2px #dbd4d4;
+    margin-top: 10px;
+    text-decoration: wavy;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.logoImg{
+    width: 40px;
+    height: 40px;
+}
+
+.login, .logout{
+    margin-top: 10px;
+    padding: 12px 23px 12px;
+    background-color: transparent;
+    color: #d2cccc;
+    border: 2px 2px;
+    border-color: #6a6868;
+    margin-left: 200px;
+}
+
+.login:hover, .logout:hover{
+    background-color: #d2cccc;
+    color: #242424c3;
+    border: 2px 2px;
+}
+
+.cartBtn{
+    margin-top: 10px;
+    background-color: transparent;
+    color: #d2cccc;
+    margin-left: 30px;
+    border-color:  #6a6868;
+}
+
+.cartBtn:hover{
+    background-color: #d2cccc;
+    color: #242424c3;
+    border: 2px 2px  #6a6868;
+}
+
+.userProfile{
+    margin-top: 10px;
+}
+

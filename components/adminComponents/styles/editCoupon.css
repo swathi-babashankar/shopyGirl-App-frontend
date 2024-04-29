@@ -1,0 +1,41 @@
+body{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-div{
+    width: 100vw;
+    
+}
+
+.editCHdng{
+    text-align: center;
+}
+.edit-div{
+    margin-top: 20px;
+    width: 50vw;
+    height: 65vh;
+    box-shadow: 1px 2px 2px #6a6868;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.code, .disc, .cExp{
+    padding: 15px 25px 20px;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+}
+
+.updateBtn{
+    padding: 10px 10px 15px;
+    background-color: transparent;
+    color: #d2cccc;
+    border: 2px 2px;
+    border-color: #6a6868;
+    border-radius: 8px;
+}

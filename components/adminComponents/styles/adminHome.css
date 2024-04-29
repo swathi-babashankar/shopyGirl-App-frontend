@@ -1,0 +1,53 @@
+.profileHeader{
+    /* position: absolute; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -180px;
+    margin-right: 40px;
+}
+
+.logoutBtn{
+    margin-right: 70px;
+
+}
+
+.adTitle{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 80px;
+    margin-left: 540px;
+    color: #ffffff;
+}
+
+.adNav{
+    margin-top: 50px;
+    /* width: 100vw; */
+}
+
+.allPt{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.cCpn{
+    margin-top: 160px;
+    margin-left: 60px;
+
+}
+
+.allCpns{
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+
+.allOdrs{
+    margin-left: 110px;
+
+}
+
+.adminProf{
+    /* margin-top: -540px; */
+    margin-top: -80px;
+    margin-right: 40px;
+
+}

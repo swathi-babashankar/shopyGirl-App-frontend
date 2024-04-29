@@ -1,0 +1,71 @@
+body{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-div{
+    width: 100vw;
+}
+
+.prodDiv{
+    border: 2px 2px 2px;
+    box-shadow: 2px #d2cccc;
+    width: 30vw;
+    height: 60vh;
+    margin-left: 450px;
+    margin-top: -200px;
+}
+
+.prodForm{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.prodForm .ptName, .ptPrice, .ptBrand, .ptDisc, .ctgry{
+    padding: 15px 30px 20px;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+}
+
+.ptPrice{
+    margin-top: 3px;
+}
+
+.ptName:hover, .ptPrice:hover, .ptBrand:hover, .ptDisc:hover, .ctgry:hover{
+    background-color: #d2cccc;
+    border-color: #242424c3;
+    color: #242424c3;
+}
+
+.ptImage{
+    padding: 15px 30px 20px;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+}
+
+.addBtn{
+    padding: 10px 10px 15px;
+    background-color: transparent;
+    color: #d2cccc;
+    border: 2px 2px;
+    border-color: #6a6868;
+    border-radius: 8px;
+}
+
+.addBtn:hover{
+    background-color: #d2cccc;
+    color: #242424c3;
+    border: 2px 2px;
+}
+
+
+
+
+

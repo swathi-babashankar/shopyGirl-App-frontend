@@ -1,0 +1,51 @@
+
+body{
+    background-color: #000000;
+    color: #d2cccc;
+}
+
+.formDiv{
+    margin-top: 40px;
+    width: 30vw;
+    height: 50vh;
+    margin-left: 100px;
+    padding: 20px 40px 30px;
+    box-shadow: 2px 2px 2px #d2cccc;
+}
+
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.name, .address{
+    padding: 12px 15px 12px;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+}
+
+.ph, .cCode{
+    padding: 10px 12px 10px;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+}
+
+.order{
+    padding: 10px 10px 15px;
+    background-color: transparent;
+    color: #d2cccc;
+    border: 2px 2px;
+    border-color: #6a6868;
+    border-radius: 8px;
+}
+
+.order:hover{
+    background-color: #d2cccc;
+    color: #242424c3;
+    border: 2px 2px;
+}

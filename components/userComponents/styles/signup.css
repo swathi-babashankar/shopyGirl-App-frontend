@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    background-color: #000000;
+    color: #d2cccc;
+}
+
+.form-div{
+    width: 30vw;
+    height: 70vh;
+    box-shadow: 2px 2px 2px 1px #6a6868;
+}
+
+.hdng{
+    text-align: center;
+    color: #d2cccc;
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* .name .phoneNo .email .pswd{
+    padding: 30 15 30;
+    border: 1px #6a6868;
+    background-color: transparent;
+} */
+
+.email, .pswd{
+    padding: 15px 30px 20px ;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+}
+
+.name, .phoneNo{
+    padding: 15px 30px 20px ;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+}
+
+.name:hover, .phoneNo:hover, .email:hover, .pswd:hover{
+    background-color: #d2cccc;
+    border-color: #242424c3;
+    color: #242424c3;
+}
+
+
+.subBtn{
+    padding: 10px 10px 15px;
+    background-color: transparent;
+    color: #d2cccc;
+    border: 2px 2px;
+    border-color: #6a6868;
+    border-radius: 8px;
+
+}

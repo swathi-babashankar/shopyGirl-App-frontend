@@ -1,0 +1,29 @@
+
+body{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    color: #d2cccc;
+    font-size: 20px;
+}
+
+.main-div{
+    width: 100vw;
+}
+
+.view-div{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 70vw;
+    height: 27vh;
+    border-radius: 8px;
+    margin-left: 40px;
+    box-shadow: 2px 1px 2px #6a6868;
+}
+
+.p-img{
+    width: 100px;
+    height: 100px;
+}
+

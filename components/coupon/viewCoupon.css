@@ -1,0 +1,35 @@
+body{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-div{
+    width: 100vw;
+}
+
+.cView{
+    width: 70vw;
+    height: 20vh;
+    padding: 20px 25px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px #6a6868;
+}
+
+.cCode span{
+    font-weight: bold;
+    color: #d2cccc;
+}
+
+.disc{
+   font-weight: bold;
+   color: #d2cccc;
+}
+
+.vDate span{
+    color: #6a6868;
+}

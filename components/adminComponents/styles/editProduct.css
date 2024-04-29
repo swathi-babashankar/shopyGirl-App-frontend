@@ -1,0 +1,56 @@
+
+body{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.backArw{
+    font-size: 44px;
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-top: -40px;
+    color: #d2cccc;
+}
+
+.main-div{
+    width: 100vw;
+}
+
+.editPHdng{
+    text-align: center;
+    /* margin-left: 350px; */
+    
+}
+
+.edit-div{
+    margin-top: -50px;
+    width: 50vw;
+    height: 80vh;
+    box-shadow: 1px 2px 2px #6a6868;
+    padding: 20px 20px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.cat, .disc, .price, .p-img{
+    padding: 15px 25px 20px;
+    background-color: transparent;
+    border-color: #6a6868;
+    color: #d2cccc;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.price{
+    margin-left: 50px;
+}
+
+.updateBtn{
+    padding: 10px 15px 10px;
+    width: 180px;
+}
