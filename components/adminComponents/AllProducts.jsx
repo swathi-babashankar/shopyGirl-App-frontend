@@ -26,7 +26,9 @@ export default function AllProducts({name, price, images, _id}){
         console.log(_id);
         console.log(response);
         
-        dispatch(removeProduct(response.data.productDeleted._id))
+        dispatch(removeProduct(response.data.productDeleted._id));
+
+        location.reload();
         
         }
 

@@ -19,7 +19,7 @@ body{
     gap: 30px;
     width: 60vw;
     height: 70vh;
-    margin-left: 50px;
+    margin-left: 250px;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
@@ -27,7 +27,7 @@ body{
     box-shadow: 2px 2px #6a6868;
 }
 
-.email, .newPswd, .confirmPswd, .pswd{
+.email, .newPswd, .confirmPswd, .pswd, .adEphoneNo{
     padding: 15px 30px 20px ;
     background-color: transparent;
     border-color: #6a6868;
@@ -35,7 +35,7 @@ body{
     border-radius: 8px;
 }
 
-.email:hover, .newPswd:hover, .confirmPswd:hover, .pswd:hover{
+.email:hover, .newPswd:hover, .confirmPswd:hover, .pswd:hover, .adEphoneNo:hover{
     background-color: #d2cccc;
     border-color: #242424c3;
     color: #242424c3;
@@ -57,4 +57,108 @@ body{
     color: #242424c3;
     border: 2px 2px;
     color: #008080;
+}
+
+@media (max-width: 1250px) {
+
+    .editDiv {
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    
+}
+
+
+@media (max-width: 1050px) {
+
+    .editDiv {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -40px;
+        height: 100vh;
+        margin-left: 150px;
+    }
+
+    .editDiv label {
+        width: 190px;
+        text-align: center;
+    }
+
+    .editDiv .edEmail {
+        width: 80px;
+
+    }
+
+    .edEmail .email{
+        margin-left: -60px;
+    }
+
+    .email, .newPswd, .confirmPswd, .pswd , .adEditHdng{
+        padding: 15px 25px 15px;      
+    }
+
+    .updateBtn {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    
+}
+
+@media (max-height: 1050px) {
+
+    .editDiv {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .editDiv{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .editDiv {
+        margin-left: 50px;
+        font-size: 16px;
+    }
+
+    .adEditHdng{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+     .newPswd, .confirmPswd, .pswd , .adEphoneNo {
+        width: 80px;
+        height: 10px;
+    }
+
+    .updateBtn{
+        width: 130px;
+        margin-left: -10px;
+    }
+
+    .editDiv .email{
+        width: 80px;
+        margin-left: -30px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .editDiv {
+        margin-top: -60px;
+        margin-left: 20px;
+    }
+
 }

@@ -33,3 +33,97 @@ body{
     border-radius: 1.5rem;
     
 }
+
+@media (max-width: 1350px) {
+
+    .inputDiv{
+        
+        margin-left: 300px;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    .inputDiv {
+        margin-left: 200px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .inputDiv {
+        margin-left: 100px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .inputDiv{
+        padding: 20px 20px 20px;
+    }
+
+
+}
+
+@media (max-width: 850px) {
+
+    .inputDiv {
+        width: 600px;
+        font-size: 17px;
+        padding: 15px 15px 15px;
+    }
+
+    .profHdng {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .inputDiv {
+        width: 500px;
+        font-size: 15px;
+        padding: 5px 5px 5px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .inputDiv {
+        width: 400px;
+        
+    }
+
+    .adName, .adMail, .adPswd{
+        padding: 10px  10px;
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    .inputDiv {
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 415px) {
+
+    .inputDiv {
+        margin-left: 10px;
+        width: 350px;
+    }
+
+    .inputDiv .adMail , .inputDiv .adPswd{
+        width: 193px;
+        margin-left: 10px;
+    }
+
+}

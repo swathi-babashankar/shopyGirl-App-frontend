@@ -66,7 +66,7 @@ export default function AdminHome(){
 
                     <li className="allPt">
                      <Link to="/admin/allProducts">
-                      <button className="addPd">Show Products</button>
+                      <button className="showPd">Show Products</button>
                      </Link>
                     </li>
 

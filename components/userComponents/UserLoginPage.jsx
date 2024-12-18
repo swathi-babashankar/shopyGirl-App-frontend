@@ -30,11 +30,11 @@ export default function UserLogin(){
         try{
 
             const response = await axios.post("http://localhost:4000/userLogin", data, {withCredentials: true})
-            console.log(response);
-            dispatch(login(response.data.userLoggedin))
+            console.log(response.data.userLoggedin);
+            dispatch( login(response.data.userLoggedin))
             const id = response.data.userLoggedin._id;
             console.log(id);
-            navigate(`/:id=${id}`)
+            navigate("/")
         }
 
         catch(e){

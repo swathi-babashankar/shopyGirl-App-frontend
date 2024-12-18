@@ -63,11 +63,11 @@ export default function EditAdminProfile(){
           <h2 className="adEditHdng">Update Your Details Here</h2>
 
             <div className="editDiv">
-              <label>Email <input type="email" className="email" value={email} onChange={(e) => setEmail(e.target.value)}/> </label> 
-              <label>New Password  <input type="password" className="newPswd"  value={newPswd} onChange={(e) => setNewPswd(e.target.value)}/> </label> 
-              <label>Confirm Password <input type="password" className="confirmPswd" value={confPassword} onChange={(e) => setConfPassword(e.target.value)}/> </label> 
-              <label>Current Password  <input type="password" className="pswd" value={currPassword} onChange={(e) => setCurrPassword(e.target.value)} /> </label> 
-              <label>PhoneNo <input type="text" className="phoneNo" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)}/> </label>  
+              <label className="edEmail">Email <input type="email" placeholder="Enter Your Email" className="email" value={email} onChange={(e) => setEmail(e.target.value)}/> </label> 
+              <label>New Password  <input type="password" placeholder="New Password" className="newPswd"  value={newPswd} onChange={(e) => setNewPswd(e.target.value)}/> </label> 
+              <label>Confirm Password <input type="password" placeholder="Confirm Password" className="confirmPswd" value={confPassword} onChange={(e) => setConfPassword(e.target.value)}/> </label> 
+              <label>Current Password  <input type="password" placeholder="Current Password" className="pswd" value={currPassword} onChange={(e) => setCurrPassword(e.target.value)} /> </label> 
+              <label>PhoneNo <input type="text" placeholder="Your PhoneNo" className="adEphoneNo" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)}/> </label>  
 
               <button className="updateBtn" type="button" onClick={handleUpdate}>Update Profile</button>
             </div>

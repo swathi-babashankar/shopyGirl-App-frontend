@@ -61,11 +61,11 @@ export default function EditCoupon(){
 
         <div className="main-div">
          
-            <div className="edit-div">
+            <div className="edits-div">
                 <label htmlFor="Code">Coupon Code: <input type="text" className="code" value={couponCode} onChange={(e) => setCouponCode(e.target.value)} /> </label>
                 <label>Discount: <input type="number" className="disc" value={discount} onChange={(e) => setDiscount(e.target.value)} /></label>
                 <label>Valid Till: <input type="datetime-local" className="cExp" value={validTill} onChange={(e) => setValidTill(e.target.value)} /> </label>
-                <button className="updateBtn" onClick={handleUpdate}>Update Coupon</button>
+                <button className="updatesBtn" onClick={handleUpdate}>Update Coupon</button>
                 <p>{successMsg}</p>
             </div>
             <p>{error}</p>

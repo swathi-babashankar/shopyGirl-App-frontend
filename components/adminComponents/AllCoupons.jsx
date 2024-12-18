@@ -3,6 +3,7 @@ import axios from "axios";
 import {useDispatch, useSelector } from 'react-redux';
 import  { deleteCoupon } from "../../features/admin/couponSlice";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 
 export default function AllCoupons({couponCode, discount, validTill, _id}){
@@ -16,12 +17,16 @@ export default function AllCoupons({couponCode, discount, validTill, _id}){
         
     }
 
+    
+
     const handleDelete = async () => {
 
         try {
 
             const response = await axios.delete(`http://localhost:4000/deleteCoupon/?couponId=${_id}&adminId=${adminId}`, {withCredentials: true});
             dispatch(deleteCoupon(response.data.couponDeleted._id));
+
+            location.reload();
         }
 
         catch(e) {

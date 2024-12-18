@@ -11,7 +11,7 @@ body{
     width: 100vw;
 }
 
-.view-div{
+.uview-div{
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -27,3 +27,58 @@ body{
     height: 100px;
 }
 
+
+
+@media (max-width: 950px) {
+
+    
+
+    .uview-div .oName{
+        margin-top: 20px;
+
+        /* margin-left: 40px; */
+    }
+
+    .uview-div .oPrice{
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 890px) {
+     .uview-div {
+        font-size: 18px;
+     }
+}
+
+@media (max-width: 850px) {
+
+    .uview-div{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 300px;
+        gap: 0px;
+ 
+     }
+
+     .uview-div .oPrice, .uview-div .oDate{
+        margin-top: -20px;
+    }
+
+}
+
+@media (max-width: 395px) {
+
+    .uview-div{
+        font-size: 14px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .uview-div .p-img{
+        height: 80px;
+        width: 80px;
+    }
+
+}

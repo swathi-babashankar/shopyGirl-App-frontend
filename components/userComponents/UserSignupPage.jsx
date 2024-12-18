@@ -57,7 +57,7 @@ export default function UserSignup(){
         <>
         <div className="main-div">
             <div className="form-div">
-                <h2 className="hdng">Sign Up</h2>
+                <h2 className="hdng">Sign up</h2>
 
             <form className="signup" action="post" onSubmit={handleSubmit}>
 

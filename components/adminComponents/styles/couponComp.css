@@ -38,3 +38,88 @@ body{
     border-color: #6a6868;
     border-radius: 8px;
 }
+
+@media (max-width: 1050px) {
+
+    .sub-div {
+        margin-left: 300px; 
+    }
+}
+
+@media (max-width: 950px) {
+
+    .sub-div {
+        margin-left: 200px; 
+    }
+
+    .sBtn{
+        width: 400px;
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .sub-div h2 {
+        font-size: 24px;
+    }
+
+    .sub-div{
+        width: 300px;
+    }
+
+    .cCode, .cDisc, .cExp {
+        padding: 10px 15px 15px;
+        
+    }
+
+    .sBtn {
+        padding: 10px 5px 10px;
+        width: 300px;
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .sub-div {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+
+    .sub-div{
+        width: 250px;
+    }
+
+    .cCode, .cDisc, .cExp {
+        padding: 7px 10px 10px;
+        
+    }
+
+    .sBtn{
+        width: 250px
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .sub-div{
+        margin-left: 100px;
+    }
+}
+
+@media(max-width: 420px) {
+
+    .sub-div{
+        margin-left: 50px;
+    }
+
+}
