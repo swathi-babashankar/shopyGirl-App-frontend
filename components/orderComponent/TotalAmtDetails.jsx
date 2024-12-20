@@ -24,7 +24,7 @@ export default function TotalAmtDetails({price, id}) {
         try {
           console.log(userId);
           
-            const response = await axios.get(`http://localhost:4000/getItemsByUserId/?userId=${userId}`, {withCredentials: true});
+            const response = await axios.get(`${import.meta.env.BACKEND_URL}/getItemsByUserId/?userId=${userId}`, {withCredentials: true});
             console.log(response);
     
             setTotalAmt(response.data.totalAmtOfItems);
@@ -58,7 +58,7 @@ export default function TotalAmtDetails({price, id}) {
     
         try {
     
-          const coupApply = await axios.get(`http://localhost:4000/applyCoupon/?prodId=${id}&couponCode=${couponCode}`);
+          const coupApply = await axios.get(`${import.meta.env.BACKEND_URL}/applyCoupon/?prodId=${id}&couponCode=${couponCode}`);
           console.log(coupApply.data.price);
           setDiscPrice(coupApply.data.price);
           console.log(couponCode);
