@@ -20,7 +20,7 @@ export const  AddToCart = async (_id, qty, userId, size) => {
 
         // if(userId){
 
-        const response = await axios.post(`http://localhost:4000/addToCart/?prodId=${_id}&userId=${userId}`,{quantity: qty, size: size}, {withCredentials: true} );
+        const response = await axios.post(`${import.meta.env.BACKEND_URL}/addToCart/?prodId=${_id}&userId=${userId}`,{quantity: qty, size: size}, {withCredentials: true} );
         console.log(response);
         return response;
         // setProduct(response.data.productAdded);
