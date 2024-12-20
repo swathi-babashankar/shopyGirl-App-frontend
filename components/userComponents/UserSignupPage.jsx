@@ -27,7 +27,7 @@ export default function UserSignup(){
 
         try {
 
-            const response = await axios.post("http://localhost:4000/createUser", data, {withCredentials: true})
+            const response = await axios.post(`${import.meta.env.BACKEND_URL}/createUser`, data, {withCredentials: true})
             console.log(response);
             dispatch(addAccount(response.data.userCreated))
 
