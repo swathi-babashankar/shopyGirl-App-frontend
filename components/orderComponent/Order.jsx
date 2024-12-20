@@ -44,7 +44,7 @@ export default function Order() {
 
     try {
 
-      const response = await axios.post("http://localhost:4000/userLogin", data, {withCredentials: true});
+      const response = await axios.post(`${import.meta.env.BACKEND_URL}/userLogin`, data, {withCredentials: true});
       console.log(response);
 
       dispatch(login(response.data.userLoggedin))
@@ -75,7 +75,7 @@ export default function Order() {
 
         if(userId) {
   
-        const response = await axios.get(`http://localhost:4000/getAllOrders/?userId=${userId}`, { withCredentials: true });
+        const response = await axios.get(`${import.meta.env.BACKEND_URL}/getAllOrders/?userId=${userId}`, { withCredentials: true });
         console.log("getOrders", response);
         setSavedAddress(response.data.allOrders[0]);
         }
@@ -100,7 +100,7 @@ export default function Order() {
         if(id){
           console.log("try");
 
-          const response = await axios.get(`http://localhost:4000/getProductById/?prodId=${id}`);
+          const response = await axios.get(`${import.meta.env.BACKEND_URL}/getProductById/?prodId=${id}`);
           console.log(response);
           setOrderingProduct(response?.data.getProdById);
           
@@ -139,7 +139,7 @@ export default function Order() {
       if(id) {
         console.log("productid", id);
 
-        const response = await axios.post(`http://localhost:4000/orderSingleProduct/?prodId=${id}&userId=${userId}`, data, { withCredentials: true } );
+        const response = await axios.post(`${import.meta.env.BACKEND_URL}/orderSingleProduct/?prodId=${id}&userId=${userId}`, data, { withCredentials: true } );
         console.log(response);
   
         setSuccessMsg(response.data.message);
@@ -147,7 +147,7 @@ export default function Order() {
 
       else {
 
-        const response = await axios.post(`http://localhost:4000/placeOrder/?userId=${userId}`, data, {withCredentials: true});
+        const response = await axios.post(`${import.meta.env.BACKEND_URL}/placeOrder/?userId=${userId}`, data, {withCredentials: true});
         console.log("orderCartprof",response);
 
         // dispatch( placeOrder(response.data.findingProduct))
