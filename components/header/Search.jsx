@@ -17,7 +17,7 @@ export default function Search() {
 
         try {
            
-            const response = await axios.post(`http://localhost:4000/searchProduct`, {search: search});
+            const response = await axios.post(`${import.meta.env.BACKEND_URL}/searchProduct`, {search: search});
             console.log(response);
 
             setProducts(response.data.filteredProd);
