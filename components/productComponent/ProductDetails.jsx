@@ -37,7 +37,7 @@ export default function ProductDetails() {
 
                 console.log("try");
 
-                const response = await axios.get(`http://localhost:4000/getProductById/?prodId=${id}`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getProductById/?prodId=${id}`, {withCredentials: true});
                 console.log(response);
                 setProduct(response.data.getProdById);
                 console.log(response.data.getProdById.sizeAndStock);
@@ -93,7 +93,7 @@ export default function ProductDetails() {
 
                 if(userId){
 
-                const response = await axios.post(`http://localhost:4000/addToCart/?prodId=${id}&userId=${userId}`, {quantity: quantity, size: enteredSize}, {withCredentials: true});
+                const response = await axios.post(`${import.meta.env.BACKEND_URL}addToCart/?prodId=${id}&userId=${userId}`, {quantity: quantity, size: enteredSize}, {withCredentials: true});
                 
 
                 console.log(response)
