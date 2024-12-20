@@ -26,7 +26,7 @@ export default function  Cart({ product, quantity, size, _id }){
 
         try {
 
-            const response = await axios.put(`http://localhost:4000/editCart/?prodId=${_id}&userId=${id}`, {quantity: qty, size: updatedSize}, {withCredentials: true});
+            const response = await axios.put(`${import.meta.env.BACKEND_URL}/editCart/?prodId=${_id}&userId=${id}`, {quantity: qty, size: updatedSize}, {withCredentials: true});
             console.log(response);
             
         }
@@ -60,7 +60,7 @@ export default function  Cart({ product, quantity, size, _id }){
 
         try {
 
-            const response = await axios.delete(`http://localhost:4000/deleteCartItem/?prodId=${_id}&userId=${id}`, {withCredentials: true});
+            const response = await axios.delete(`${import.meta.env.BACKEND_URL}/deleteCartItem/?prodId=${_id}&userId=${id}`, {withCredentials: true});
             console.log(response);
 
             dispatch(removeFromCart(response.data.prodDeleted._id));
