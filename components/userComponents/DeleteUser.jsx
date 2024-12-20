@@ -27,7 +27,7 @@ export default function DeleteUser() {
 
         try {
 
-            const response = await axios.delete(`http://localhost:4000/deleteUser/?id=${id}`, { withCredentials: true }, data);
+            const response = await axios.delete(`${import.meta.env.BACKEND_URL}/deleteUser/?id=${id}`, { withCredentials: true }, data);
             console.log(response);
             setSuccessMsg(response.data.message);
 
