@@ -18,7 +18,7 @@ export default function AdminHome(){
 
         try{
 
-            const response = await axios.get("http://localhost:4000/adminLogout", {withCredentials: true});
+            const response = await axios.get(`${import.meta.env.BACKEND_URL}/adminLogout`, {withCredentials: true});
             dispatch(logout());
 
             if(response.data){
