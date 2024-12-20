@@ -51,7 +51,7 @@ export default function AddProduct(){
 
         try{
 
-            const response = await axios.post(`http://localhost:4000/createProduct?adminId=${adminId}`,  formData, {withCredentials: true})
+            const response = await axios.post(`${import.meta.env.BACKEND_URL}/createProduct?adminId=${adminId}`,  formData, {withCredentials: true})
             console.log(response);
             dispatch(addProduct(response.data.productCreated))
             setSuccessMsg(response.data.message)
