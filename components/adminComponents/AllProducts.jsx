@@ -21,7 +21,7 @@ export default function AllProducts({name, price, images, _id}){
     const handleDelete = async () => {
 
         try{
-        const response = await axios.delete(`http://localhost:4000/deleteProduct/?adminId=${adminId}&prodId=${_id}`, {withCredentials: true});
+        const response = await axios.delete(`${import.meta.env.BACKEND_URL}/deleteProduct/?adminId=${adminId}&prodId=${_id}`, {withCredentials: true});
 
         console.log(_id);
         console.log(response);
