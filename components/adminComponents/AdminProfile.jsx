@@ -25,7 +25,7 @@ export default function AdminProfile() {
 
             try {
 
-                const response = await axios.get(`http://localhost:4000/getAdminAccount/?adminId=${id}`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getAdminAccount/?adminId=${id}`, {withCredentials: true});
                 // setAdminInfo(response.data.adminAccount);
                 setName(response.data.adminAccount.name);
                 setEmail(response.data.adminAccount.email);
