@@ -14,7 +14,7 @@ export default function CouponsPage(){
 
             try {
 
-                const response = await axios.get(`http://localhost:4000/getCoupons`);
+                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getCoupons`);
                 console.log(response);
                 setCoupons(response.data.coupons);
             }
