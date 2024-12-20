@@ -29,7 +29,7 @@ export default function Header() {
 
         try {
 
-            const response = await axios.get(`http://localhost:4000/userLogout/?id=${userId}`, {withCredentials: true});
+            const response = await axios.get(`${import.meta.env.BACKEND_URL}/userLogout/?id=${userId}`, {withCredentials: true});
             dispatch(logout())
 
             console.log(response);
