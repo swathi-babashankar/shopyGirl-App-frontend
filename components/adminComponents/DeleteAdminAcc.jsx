@@ -22,7 +22,7 @@ export default function DeleteAdminAccount() {
             password
         }
 
-        const response = await axios.delete(`http://localhost:4000/deleteAccount/?${id}`, { withCredentials: true }, data );
+        const response = await axios.delete(`${import.meta.env.BACKEND_URL}/deleteAccount/?${id}`, { withCredentials: true }, data );
 
         setSuccessMsg(response.data.message);
         dispatch(deleteAdminAcc(response.data.deleteAccount._id));
