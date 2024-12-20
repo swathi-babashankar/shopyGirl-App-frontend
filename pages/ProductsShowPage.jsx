@@ -18,7 +18,7 @@ export default function ProductShowPage(){
         const showAllProducts = async () => {
 
             try{
-                const response = await axios.get("http://localhost:4000/getProducts", {withCredentials: true})
+                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getProducts`, {withCredentials: true})
                 setProducts(response.data.getAllprods)
 
             }
