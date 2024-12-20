@@ -17,7 +17,7 @@ export default function ViewAllCoupons(){
         const getAllCoupons = async () => {
 
             try{
-                const response = await axios.get("http://localhost:4000/getCoupons", {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getCoupons`, {withCredentials: true});
                 console.log(response.data.coupons);
                 setCoupons(response.data.coupons);
 
@@ -35,7 +35,7 @@ export default function ViewAllCoupons(){
 
             try{
 
-                const response = await axios.delete(`http://localhost:4000/deleteExpiredCoupon/?adminId=${adminId}`, {withCredentials: true})
+                const response = await axios.delete(`${import.meta.env.BACKEND_URL}/deleteExpiredCoupon/?adminId=${adminId}`, {withCredentials: true})
 
                 console.log(response);
 
