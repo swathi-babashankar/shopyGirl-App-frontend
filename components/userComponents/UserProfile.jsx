@@ -22,7 +22,7 @@ export default function UserProfile() {
 
             try {
 
-                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getUserAccount/?userId=${id}`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getUserAccount/?userId=${id}`, {withCredentials: true});
                 console.log(response);
 
                 setName(response.data.userAccount.name)
