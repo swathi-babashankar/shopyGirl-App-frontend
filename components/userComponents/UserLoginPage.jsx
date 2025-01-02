@@ -29,7 +29,7 @@ export default function UserLogin(){
 
         try{
 
-            const response = await axios.post(`${import.meta.env.BACKEND_URL}/userLogin`, data, {withCredentials: true})
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/userLogin`, data, {withCredentials: true})
             console.log(response.data.userLoggedin);
             dispatch( login(response.data.userLoggedin))
             const id = response.data.userLoggedin._id;
