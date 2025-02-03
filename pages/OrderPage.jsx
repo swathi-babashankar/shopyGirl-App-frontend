@@ -17,7 +17,7 @@ export default function OrderPage() {
 
             try {
 
-                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getAllOrders/?userId=${userId}`, { withCredentials: true });
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getAllOrders/?userId=${userId}`, { withCredentials: true });
 
                 console.log(response);
                 setAllOrders(response.data.allOrders);
