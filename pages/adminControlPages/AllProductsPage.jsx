@@ -17,7 +17,7 @@ export default function AllProductsPage(){
 
         try{
 
-            const response = await axios.get(`${import.meta.env.BACKEND_URL}/getProducts`, {withCredentials: true})
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getProducts`, {withCredentials: true})
             console.log(response);
             setProducts(response.data.getAllprods)
 
