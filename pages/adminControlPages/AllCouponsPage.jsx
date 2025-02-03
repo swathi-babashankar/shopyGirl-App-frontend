@@ -17,7 +17,7 @@ export default function ViewAllCoupons(){
         const getAllCoupons = async () => {
 
             try{
-                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getCoupons`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getCoupons`, {withCredentials: true});
                 console.log(response.data.coupons);
                 setCoupons(response.data.coupons);
 
