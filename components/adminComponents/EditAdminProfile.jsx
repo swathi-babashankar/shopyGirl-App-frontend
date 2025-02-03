@@ -33,7 +33,7 @@ export default function EditAdminProfile(){
 
         try{
 
-            const response = await axios.put(`${import.meta.env.BACKEND_URL}/editAdmin/?id=${id}`, data, {withCredentials: true});
+            const response = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/editAdmin/?id=${id}`, data, {withCredentials: true});
 
             setSuccessMsg(response.data.message);
             dispatch(updateAdminAcc(response.data.updatedDetails))
