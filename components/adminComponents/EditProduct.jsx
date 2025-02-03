@@ -35,7 +35,7 @@ export default function EditProduct(){
 
         try{
 
-        const response = await axios.put(`${import.meta.env.BACKEND_URL}/updateProductById/?adminId=${adminId}&prodId=${prodId}`,formData, {withCredentials: true})
+        const response = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/updateProductById/?adminId=${adminId}&prodId=${prodId}`,formData, {withCredentials: true})
         console.log(response);
         setSuccessMsg(response.data.message)
 
