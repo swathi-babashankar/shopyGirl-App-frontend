@@ -26,7 +26,7 @@ export default function  Cart({ product, quantity, size, _id }){
 
         try {
 
-            const response = await axios.put(`${import.meta.env.BACKEND_URL}/editCart/?prodId=${_id}&userId=${id}`, {quantity: qty, size: updatedSize}, {withCredentials: true});
+            const response = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/editCart/?prodId=${_id}&userId=${id}`, {quantity: qty, size: updatedSize}, {withCredentials: true});
             console.log(response);
             
         }
