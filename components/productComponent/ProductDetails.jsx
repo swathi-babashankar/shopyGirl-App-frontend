@@ -6,10 +6,8 @@ import { useSelector, useDispatch} from 'react-redux';
 import "./productDetails.css";
 import { addedToCat } from "../../features/cart/cartSlice";
 
-
 export default function ProductDetails() {
 
-    
     const [product, setProduct] = useState({});
     const [quantity, setQuantity] = useState(1);
     const [productToCart, setProductToCart] = useState({});
@@ -44,8 +42,6 @@ export default function ProductDetails() {
                 setSize(response.data.getProdById.sizeAndStock);
                 let val = size;
                 console.log("mods",val);
-                
-
             }
 
             catch(e) {
@@ -57,22 +53,15 @@ export default function ProductDetails() {
         getProductDetails();
 
         }, []);
-
         // const selectSize = () => {
-
-
-
         // }
-
         const handleBuyNow = async () => {
 
             try {
 
                 if(userId){
-
                 // const response = await axios.post(`http://localhost:4000/addToCart/?prodId=${id}&userId=${userId}`, {quantity: quantity, size: enteredSize}, {withCredentials: true});
                 size = enteredSize
-
                 AddToCart(id, quantity,userId, size ).then((res)=> setProductToCart(res.data.productAdded)).catch((e)=>setError(e.data.message))
                 // console.log(response);
                 }
@@ -95,7 +84,6 @@ export default function ProductDetails() {
 
                 const response = await axios.post(`${import.meta.env.BACKEND_URL}addToCart/?prodId=${id}&userId=${userId}`, {quantity: quantity, size: enteredSize}, {withCredentials: true});
                 
-
                 console.log(response)
                 setSuccessMsg(response.data.message + "🛒")
 
@@ -119,8 +107,6 @@ export default function ProductDetails() {
             addItemToCart();
 
         }
-
-
 
     return (
 
