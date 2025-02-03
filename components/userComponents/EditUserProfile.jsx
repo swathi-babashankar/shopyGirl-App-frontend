@@ -50,7 +50,7 @@ export default function EditUserProfile(){
         
 
         try{
-            const response = await axios.put(`${import.meta.env.BACKEND_URL}/updateUser/?id=${id}`, data, {withCredentials: true});
+            const response = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/updateUser/?id=${id}`, data, {withCredentials: true});
             console.log(response);
 
             setSuccessMsg(response.data.message);
