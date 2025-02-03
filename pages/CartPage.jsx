@@ -24,7 +24,7 @@ export default function CartPage() {
 
             try {
 
-                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getItemsByUserId/?userId=${userId}`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getItemsByUserId/?userId=${userId}`, {withCredentials: true});
                 console.log(response);
 
                 setCartProducts(response.data.userCartItems);
