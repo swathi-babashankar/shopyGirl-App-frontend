@@ -37,7 +37,7 @@ export default function ProductDetails() {
 
                 console.log("try");
 
-                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getProductById/?prodId=${id}`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getProductById/?prodId=${id}`, {withCredentials: true});
                 console.log(response);
                 setProduct(response.data.getProdById);
                 console.log(response.data.getProdById.sizeAndStock);
