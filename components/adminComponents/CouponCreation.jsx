@@ -26,7 +26,7 @@ export default function CouponCreation(){
 
         try{
 
-            const response = await axios.post(`${import.meta.env.BACKEND_URL}/createCoupon?adminId=${adminId}`, data, {withCredentials: true});
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/createCoupon?adminId=${adminId}`, data, {withCredentials: true});
             console.log(response);
             dispatch(addCoupon(response.data.couponCreated));
             navigate("/admin/allCoupons")
