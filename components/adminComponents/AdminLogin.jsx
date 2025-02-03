@@ -30,7 +30,7 @@ export default function AdminLogin(){
     const adminLogin = async () => {
         try {
 
-            const response = await axios.post(`${import.meta.env.BACKEND_URL}/adminLogin`, data, {
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/adminLogin`, data, {
                 withCredentials: true, 
             })
             console.log(response)
