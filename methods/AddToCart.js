@@ -18,18 +18,9 @@ export const  AddToCart = async (_id, qty, userId, size) => {
 
     try {
 
-        // if(userId){
-
-        const response = await axios.post(`${import.meta.env.BACKEND_URL}/addToCart/?prodId=${_id}&userId=${userId}`,{quantity: qty, size: size}, {withCredentials: true} );
+        const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/addToCart/?prodId=${_id}&userId=${userId}`,{quantity: qty, size: size}, {withCredentials: true} );
         console.log(response);
         return response;
-        // setProduct(response.data.productAdded);
-        // dispatch(addToCart(response.data.productAdded));
-        // }
-
-        // else{
-        //     navigate("/userLogin")
-        // }
     }
 
     catch(e){
