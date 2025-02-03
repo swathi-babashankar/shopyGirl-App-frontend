@@ -16,23 +16,18 @@ export default function AdminProfile() {
     console.log(id.slice(3));
 
     const navigate = useNavigate();
-
-
-
     useEffect( () => {
 
         const getAdminInfo = async () => {
 
             try {
-
-                const response = await axios.get(`${import.meta.env.BACKEND_URL}/getAdminAccount/?adminId=${id}`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getAdminAccount/?adminId=${id}`, {withCredentials: true});
                 // setAdminInfo(response.data.adminAccount);
                 setName(response.data.adminAccount.name);
                 setEmail(response.data.adminAccount.email);
                 setPhoneNo(response.data.adminAccount.phoneNo);
-                
+    
                 console.log(response);
-
             }
 
             catch(e) {
@@ -49,7 +44,6 @@ export default function AdminProfile() {
 
     const handleDelete = () => {
         navigate(`/admin/deleteAdminAccount/:id=${id}`);
-
     }
 
     const handleUpdate = () => {
@@ -65,7 +59,6 @@ export default function AdminProfile() {
              <label>PhoneNo <input className="adPswd" type="text" value={phoneNo} readOnly /></label> 
              <button style={{color: "tomato"}} onClick={handleDelete}>Delete Account</button>
              <button style={{color: "teal"}} onClick={handleUpdate}>Update Details</button>
-
             </div>
             <p>{error}</p>
 
