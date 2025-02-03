@@ -26,7 +26,6 @@ export default function ProductShow({name, price, images, _id}) {
         }
     }
 
-
     return(
         
         <div className="show-div">
