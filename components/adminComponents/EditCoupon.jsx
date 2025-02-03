@@ -31,7 +31,7 @@ export default function EditCoupon(){
 
         try {
 
-            const response = await axios.put(`${import.meta.env.BACKEND_URL}/editCoupon/?couponId=${couponId}&adminId=${adminId}`, data, {withCredentials: true});
+            const response = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/editCoupon/?couponId=${couponId}&adminId=${adminId}`, data, {withCredentials: true});
             console.log(response);
 
             dispatch(updateCoupon(response.data.updateCoupon));
