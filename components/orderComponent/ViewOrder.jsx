@@ -31,7 +31,7 @@ export default function ViewOrders({ realProductId, createdAt }){
                 // console.log(response.data.cartItem?.product[0]._id);
                 // const prodId = response.data.cartItem?.product[0]._id;
 
-                const productOrdered = await axios.get(`${import.meta.env.BACKEND_URL}/getProductById/?prodId=${realProductId}`) ;
+                const productOrdered = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getProductById/?prodId=${realProductId}`) ;
                 // const itemFromstore = localStorage.getItem("productOrdered");
                 //  console.log("itemFromStorsge", itemFromstore);
                  setOrderedProduct(productOrdered.data.getProdById);
