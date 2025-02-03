@@ -23,7 +23,7 @@ export default function AllCoupons({couponCode, discount, validTill, _id}){
 
         try {
 
-            const response = await axios.delete(`${import.meta.env.BACKEND_URL}/deleteCoupon/?couponId=${_id}&adminId=${adminId}`, {withCredentials: true});
+            const response = await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/deleteCoupon/?couponId=${_id}&adminId=${adminId}`, {withCredentials: true});
             dispatch(deleteCoupon(response.data.couponDeleted._id));
 
             location.reload();
