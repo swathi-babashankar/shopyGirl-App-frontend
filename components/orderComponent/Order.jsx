@@ -44,7 +44,7 @@ export default function Order() {
 
     try {
 
-      const response = await axios.post(`${import.meta.env.BACKEND_URL}/userLogin`, data, {withCredentials: true});
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/userLogin`, data, {withCredentials: true});
       console.log(response);
 
       dispatch(login(response.data.userLoggedin))
