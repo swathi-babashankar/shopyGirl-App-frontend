@@ -19,7 +19,7 @@ export default function AllOrders() {
 
         try {
 
-        const orders = await axios.get(`${import.meta.env.BACKEND_URL}/admingetAllOrders/?adminId=${adminId}`, {withCredentials: true})
+        const orders = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/admingetAllOrders/?adminId=${adminId}`, {withCredentials: true})
         setAllOrders(orders.data.getProds)
         setOrderedUser(orders.data.allOrders)
 
