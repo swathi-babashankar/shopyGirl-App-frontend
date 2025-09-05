@@ -30,10 +30,10 @@ export default function UserLogin(){
         try{
 
             const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/userLogin`, data, {withCredentials: true})
-            console.log(response.data.userLoggedin);
+            console.log("user comp resp", response.data.userLoggedin);
             dispatch( login(response.data.userLoggedin))
             const id = response.data.userLoggedin._id;
-            console.log(id);
+            console.log("user comp resp",id);
             navigate("/")
         }
 
@@ -77,3 +77,4 @@ export default function UserLogin(){
     )
 
 } 
+
