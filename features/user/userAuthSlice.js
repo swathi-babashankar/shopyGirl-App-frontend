@@ -18,7 +18,7 @@ export const userAuthSlice = createSlice({
             
             // state.userData.email = action.payload.email
             // state.userData.password = action.payload.password
-
+//
             // action.type = "USER_LOGGEDIN_SUCCESSFULLY"
         },
 
@@ -36,4 +36,5 @@ export const userAuthSlice = createSlice({
 export const {login, logout} = userAuthSlice.actions;
 
 export default userAuthSlice.reducer;
+
 
