@@ -22,7 +22,7 @@ export default function Header() {
     if(!cookievalue || cookievalue === null)
     dispatch(logout());
 
-    console.log(userId);
+    console.log("user id", userId);
 
     
     const handleLogout = async () => {
@@ -129,3 +129,4 @@ export default function Header() {
 }
 
 // 
+
