@@ -13,7 +13,7 @@ import CartPage from "../../pages/CartPage";
 
 export default function Order() {
 
-  const userId = useSelector(state => state.persistedReducer.userAuthSlice.userData?._id);
+  const userId = useSelector(state => state.persistedReducer.userAuthSlice.userData);
   const dispatch = useDispatch();
 
   const [email, setEmail] = useState("");
@@ -281,3 +281,4 @@ export default function Order() {
         </>
     )
 }
+
