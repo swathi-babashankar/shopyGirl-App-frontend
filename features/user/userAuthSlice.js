@@ -24,9 +24,8 @@ export const userAuthSlice = createSlice({
 
         logout: (state, action) => {
             state.status = false,
-            state.userData = null
+            state.userData = {}
 
-            action.type = "USER_LOGGEDOUT_SUCCESSFULLY"
         }
 
     }
@@ -36,6 +35,7 @@ export const userAuthSlice = createSlice({
 export const {login, logout} = userAuthSlice.actions;
 
 export default userAuthSlice.reducer;
+
 
 
 
