@@ -7,7 +7,7 @@ import "./styles/amtDetails.css"
 
 export default function TotalAmtDetails({price, id}) {
 
-  const userId = useSelector(state => state.persistedReducer.userAuthSlice.userData);
+  const userId = useSelector(state => state.persistedReducer.userAuthSlice.userData?._id);
   console.log(userId);
 
     const [discPrice, setDiscPrice] = useState(0);
@@ -83,4 +83,5 @@ export default function TotalAmtDetails({price, id}) {
         </>
     )
 }
+
 
