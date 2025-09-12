@@ -10,7 +10,7 @@ import { logout } from '../../features/user/userAuthSlice';
 
 export default function Header() {
 
-    const userId = useSelector(state => state.persistedReducer.userAuthSlice.userData);
+    const userId = useSelector(state => state.persistedReducer.userAuthSlice.userData?._id);
 
     // const {id} = useParams();
     const dispatch = useDispatch();
@@ -129,6 +129,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
