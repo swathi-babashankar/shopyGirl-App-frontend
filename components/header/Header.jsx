@@ -16,7 +16,7 @@ export default function Header() {
     const dispatch = useDispatch();
     const navigate = useNavigate()
 
-    let cookievalue = getCookie("token");
+    let cookievalue = document.cookie.match(new RegExp('(^|;\\s*)' + 'token' + '=([^;]*)'));;
     console.log(cookievalue);
 
     // if(!cookievalue || cookievalue === null){
@@ -131,6 +131,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
