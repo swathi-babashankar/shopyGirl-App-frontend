@@ -7,7 +7,7 @@ export default function UserAuth({children, route}) {
     const selector = useSelector(state => state.persistedReducer.userAuthSlice.status);
     const navigate = useNavigate();
 
-    let cookievalue = document.cookie.match("token")
+    let cookievalue = document.cookie.match(new RegExp('(^|;\\s*)' + "token" + '=([^;]*)'));
 
     useEffect( () => {
 
@@ -25,4 +25,5 @@ export default function UserAuth({children, route}) {
         {children}
         </>
     )
+
 }
