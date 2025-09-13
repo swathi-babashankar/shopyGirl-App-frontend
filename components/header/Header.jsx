@@ -46,7 +46,7 @@ export default function Header() {
     const handleCartBtn = () => {
 
         if(userId){
-            navigate(`/user/:id=${userId}/viewCart`)
+            navigate(`/user/:id=${userId}/viewCart`);
         }
 
         else {
@@ -131,6 +131,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
