@@ -16,12 +16,12 @@ export default function Header() {
     const dispatch = useDispatch();
     const navigate = useNavigate()
 
-    let cookievalue = document.cookie.match("token");
+    let cookievalue = getCookie("token");
     console.log(cookievalue);
 
-    if(!cookievalue || cookievalue === null){
-        dispatch(logout());
-    }
+    // if(!cookievalue || cookievalue === null){
+    //     dispatch(logout());
+    // }
     //
 
     console.log("user id", userId);
@@ -131,6 +131,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
