@@ -19,9 +19,9 @@ export default function Header() {
     let cookievalue = document.cookie.match(new RegExp('(^|;\\s*)' + 'token' + '=([^;]*)'));
     console.log(cookievalue);
 
-    // if(!cookievalue || cookievalue === null){
-    //     dispatch(logout());
-    // }
+    if(!cookievalue || cookievalue === null){
+        dispatch(logout());
+    }
     //
 
     console.log("user id", userId);
@@ -131,6 +131,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
