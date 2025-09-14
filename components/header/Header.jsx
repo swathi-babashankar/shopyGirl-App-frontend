@@ -23,7 +23,7 @@ export default function Header() {
         return cookieValue;
         
     }
- console.log(document.cookie);
+ console.log(document.cookies);
     // if(!cookievalue || cookievalue === null){
     //     dispatch(logout());
     // }
@@ -136,6 +136,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
