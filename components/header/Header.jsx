@@ -16,9 +16,14 @@ export default function Header() {
     const dispatch = useDispatch();
     const navigate = useNavigate()
 
-    let cookievalue = document.cookie.match(new RegExp('(^|;\\s*)' + 'token' + '=([^;]*)'));
-    console.log(document.cookie);
-
+    // let cookievalue = document.cookie.match(new RegExp('(^|;\\s*)' + 'token' + '=([^;]*)'));
+   
+    function getCookie(cookieName){
+      let cookieValue =  document.cookie.match(new RegExp('(^|;\\s*)' + cookieName + '=([^;]*)'));
+        return cookieValue;
+        
+    }
+ console.log(getCookie("token"));
     // if(!cookievalue || cookievalue === null){
     //     dispatch(logout());
     // }
@@ -131,6 +136,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
