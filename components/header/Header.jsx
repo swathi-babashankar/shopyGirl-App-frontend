@@ -27,7 +27,7 @@ export default function Header() {
     // if(!cookievalue || cookievalue === null){
     //     dispatch(logout());
     // }
-    //
+    //Include a useeffect hook and send request to userprofile is returned with unauth call logout
 
     console.log("user id", userId);
 
@@ -136,6 +136,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
