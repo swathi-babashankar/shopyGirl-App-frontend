@@ -29,7 +29,25 @@ export default function Header() {
     //     dispatch(logout());
     // }
     //Include a useeffect hook and send request to userprofile is returned with unauth call logout
-    useEffect(() => )
+    useEffect(() => {
+         const getUserInfo = async () => {
+
+            try {
+
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getUserAccount/?userId=${id}`, {withCredentials: true});
+                console.log(response);
+
+                
+            }
+
+            catch(e) {
+                console.log(e);
+            }
+        };
+
+        getUserInfo();
+    }
+             )
 
     console.log("user id", userId);
 
@@ -138,6 +156,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
