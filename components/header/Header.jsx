@@ -74,6 +74,7 @@ export default function Header() {
 
         if(userId){
             navigate(`/user/:id=${userId}/viewCart`);
+            console.log("cartBtn", userId);
         }
 
         else {
@@ -158,6 +159,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
