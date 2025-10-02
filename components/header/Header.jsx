@@ -36,12 +36,16 @@ export default function Header() {
 
                 const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getUserAccount/?userId=${userId}`, {withCredentials: true});
                 console.log(response);
+                if(response.status === 401){
+                    dispatch(logout());
+                }
 
                 
             }
 
             catch(e) {
                 console.log(e);
+                
             }
         };
 
@@ -155,6 +159,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
