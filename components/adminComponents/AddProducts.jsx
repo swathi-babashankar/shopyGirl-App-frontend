@@ -23,7 +23,7 @@ export default function AddProduct(){
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const adminId = useSelector(state => state.persistedReducer.adminAuthSlice.adminData?._id)
+    const adminId = useSelector(state => state.persistedReducer.adminAuthSlice.adminData?.adminLoggedIn._id)
     const selector = useSelector(state => state.persistedReducer.addProductSlice.products)
     console.log(selector);
     console.log("size",size);
@@ -153,4 +153,5 @@ export default function AddProduct(){
         </>
     )
 }
+
 
