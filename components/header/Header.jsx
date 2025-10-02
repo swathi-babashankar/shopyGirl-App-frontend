@@ -41,9 +41,9 @@ export default function Header() {
 
             catch(e) {
                 console.log("error",e);
-                //  if(response.status === 401){
-                    // dispatch(logout());
-                // }
+                 if(e.response.status === 401){
+                    dispatch(logout());
+                }
                 
             }
         };
@@ -158,6 +158,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
