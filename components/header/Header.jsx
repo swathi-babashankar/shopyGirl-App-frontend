@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Search from './Search';
 import logo from '../../assets/shopping-bag-cart-svgrepo-com.svg';
 import './header.css';
@@ -28,6 +29,7 @@ export default function Header() {
     //     dispatch(logout());
     // }
     //Include a useeffect hook and send request to userprofile is returned with unauth call logout
+    useEffect(() => )
 
     console.log("user id", userId);
 
@@ -136,6 +138,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
