@@ -34,7 +34,7 @@ export default function Header() {
 
             try {
 
-                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getUserAccount/?userId=${id}`, {withCredentials: true});
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getUserAccount/?userId=${userId}`, {withCredentials: true});
                 console.log(response);
 
                 
@@ -46,8 +46,7 @@ export default function Header() {
         };
 
         getUserInfo();
-    }
-             )
+    },[userId]);
 
     console.log("user id", userId);
 
@@ -156,6 +155,7 @@ export default function Header() {
 }
 
 // 
+
 
 
 
