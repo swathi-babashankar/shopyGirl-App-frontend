@@ -11,7 +11,7 @@ export default function UserAuth({children, route}) {
 
     useEffect( () => {
 
-        if(cookievalue !== null || cookievalue){
+        if(selector == true){
             navigate(route)
         }
 
@@ -27,6 +27,7 @@ export default function UserAuth({children, route}) {
     )
 
 }
+
 
 
 
