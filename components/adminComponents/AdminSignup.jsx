@@ -40,7 +40,7 @@ export default function AdminSignup() {
 
         try{
 
-            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/createAdmin`, data);
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/createAdmin`, data, {withCredentials: true});
             console.log(response.data.createAdmin);
 
             dispatch(addAdminAcc(response.data.createAdmin));
@@ -95,3 +95,4 @@ export default function AdminSignup() {
     )
     
 }
+
