@@ -50,7 +50,7 @@ export default function AddProduct(){
     const addProducts = async () => {
 
         try{
-
+console.log("add prod try");
             const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/createProduct?adminId=${adminId}`,  formData, {withCredentials: true})
             console.log(response);
             dispatch(addProduct(response.data.productCreated))
@@ -153,5 +153,6 @@ export default function AddProduct(){
         </>
     )
 }
+
 
 
