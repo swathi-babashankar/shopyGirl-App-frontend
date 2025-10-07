@@ -8,7 +8,7 @@ import { logout } from "../../features/admin/adminAuthSlice";
 export default function AdminHome(){
 
     console.log("ADMINHOME");
-    const adminId = useSelector(state => state.persistedReducer.adminAuthSlice.adminData?._id);
+    const adminId = useSelector(state => state.persistedReducer.adminAuthSlice.adminData?.adminLoggedIn._id);
     const dispatch = useDispatch();
 // adminLoggedIn_id
     const navigate = useNavigate();
@@ -104,4 +104,5 @@ export default function AdminHome(){
         </>
     )
 }
+
 
