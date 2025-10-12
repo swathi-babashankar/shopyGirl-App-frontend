@@ -19,8 +19,6 @@ export default function  Cart({ product, quantity, size, _id }){
     
     console.log("cart prodId", _id, id);
     const dispatch = useDispatch();
-    
-    
 
     const updateQuantity = async () => {
 
@@ -28,7 +26,6 @@ export default function  Cart({ product, quantity, size, _id }){
 
             const response = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/editCart/?prodId=${_id}&userId=${id}`, {quantity: qty, size: updatedSize}, {withCredentials: true});
             console.log(response);
-            
         }
 
         catch(e) {
@@ -38,7 +35,6 @@ export default function  Cart({ product, quantity, size, _id }){
     }
 
     useEffect( () => {
-
         updateQuantity();
         
         setProdSizes(product[0].sizeAndStock)
@@ -54,17 +50,13 @@ export default function  Cart({ product, quantity, size, _id }){
 
     }, [qty, updatedSize, sizePop])
 
-    
-
     const deleteCartItem = async () => {
 
         try {
-
             const response = await axios.delete(`${import.meta.env.BACKEND_URL}/deleteCartItem/?prodId=${_id}&userId=${id}`, {withCredentials: true});
             console.log(response);
 
             dispatch(removeFromCart(response.data.prodDeleted._id));
-            
         }
 
         catch(e) {
@@ -115,7 +107,5 @@ export default function  Cart({ product, quantity, size, _id }){
 
           }
         </div>
-
-
     )
 }
