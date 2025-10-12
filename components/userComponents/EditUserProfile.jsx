@@ -20,21 +20,15 @@ export default function EditUserProfile(){
     const dispatch = useDispatch();
     let {id} = useParams();
     id = id.slice(4);
-
-    const navigate = useNavigate() ;
-
-
+    const navigate = useNavigate();
     const userId = useSelector(state =>state.persistedReducer.userAuthSlice.userData?._id);
 
     useEffect(() => {
-
         if(!userId) {
             navigate("/userLogin")
-            
         }
     })
     
-
     const updateUserProfile = async () => {
 
         const data = {
@@ -47,24 +41,18 @@ export default function EditUserProfile(){
 
         };
 
-        
-
         try{
             const response = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/updateUser/?id=${id}`, data, {withCredentials: true});
             console.log(response);
 
             setSuccessMsg(response.data.message);
             dispatch(updateAccount(response.data.userUpdated));
-
-            
         }
 
         catch(e) {
-            
             console.log(e);
             setError(e.response.data.message);
         }
-
     }
 
     const handleUpdate = () => {
@@ -78,10 +66,7 @@ export default function EditUserProfile(){
         setCurrPassword("")
     }
     
-
-
     return(
-
         <div className="main-div">
 
             <div className="editDiv">
