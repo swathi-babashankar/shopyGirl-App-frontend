@@ -82,7 +82,7 @@ export default function ProductDetails() {
 
                 if(userId){
 
-                const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}addToCart/?prodId=${id}&userId=${userId}`, {quantity: quantity, size: enteredSize}, {withCredentials: true});
+                const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/addToCart/?prodId=${id}&userId=${userId}`, {quantity: quantity, size: enteredSize}, {withCredentials: true});
                 
                 console.log(response)
                 setSuccessMsg(response.data.message + "🛒")
