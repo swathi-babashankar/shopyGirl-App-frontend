@@ -38,7 +38,7 @@
  - Vercel (Depoloyment)
 
 ## Demo
-![Live Demo](./src/assets/gif.gif)
+![Live Demo](/assets/Trim.gif)
 
  
 ## Environment Variables
